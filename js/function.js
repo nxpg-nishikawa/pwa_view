@@ -8010,6 +8010,7 @@ var initSet = function () {
 		value: function DOMReadAfter(op) {
 
 			var messaging = firebase.messaging();
+
 			if ('serviceWorker' in navigator) {
 				// サービスワーカーの登録
 				navigator.serviceWorker.register('./service-worker.js').then(function (registration) {
